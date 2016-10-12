@@ -213,11 +213,10 @@ nav.navbar.shrink img {
 
 }
 
-#quote {
+#freequote_container {
   background-color: #F1F1F1;
   margin: 0 auto;
-  width: 80%;
-  margin: 50px auto;
+  width: 85%;
 
 }
 
@@ -268,7 +267,7 @@ nav.navbar.shrink img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;*/
-  padding: 0px 0px;
+
   color: #fff;
 }
 
@@ -497,44 +496,6 @@ nav.navbar.shrink img {
 }
 
 
-/* carousel */
-.carousel-inner img  {
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-}
-
-#myCarousel {
-  width: 100%;
-  margin-top: 95px;
-}
-
-
-/* carousel fade effect */
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-
 
 
 /* menu */
@@ -645,11 +606,17 @@ i::after {
   content: "\00a0";
 }
 
-/* image slider */
-#image-slider {
-  width: 80%;
-  margin: 0 auto;
+/* image slider and news slider*/
+#image-slider,#news-slider {
+  width: 85%;
+  margin: 0px auto;
+  margin-top: 110px;
   padding: 0px 0px;
+}
+
+#news-slider {
+  margin-top: 40px;
+  background: #F1F1F1;
 }
 
 #contactform {
@@ -657,29 +624,48 @@ i::after {
 }
 
 /* quote header 1 */
-#contactform h3 {
-    
-  /*float: left;
-  margin-top: 50px;*/
+/*#contactform h3 {
+
   color: #fff;
   font-family:pillgothic;
   padding: 5px 5%;
   border: 0px solid #333;
-  /*width: 500px;*/
   background: #2396C2;
-}
+}*/
 
 .col-container {
-  padding: 0px 50px;
+  padding: 0px 20px;
   margin-top: 0px;
 }
 
-  #left {
-    margin-left: -70px;
-  }
-  #right {
-    margin-right: -70px;
-  }
+#left,#left_news {
+  margin-left: -70px;
+}
+#right,#right_news {
+  margin-right: -70px;
+}
+
+
+/* remove carousel caret shadows */
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+/* news */
+.item.active .articles {
+  
+}
+
+.item.active .articles a {
+  margin-right: 10px;
+  font-family:pillgothic;
+}
+
+.media-body .media-heading {
+  font-family:pillgothic;
+}
+
+
 
 /* responisve */
 @media screen and (max-width: 767px) {
@@ -730,8 +716,9 @@ i::after {
   }
 
   /* image slider */
-  #image-slider {
-    margin-top: -8px;width: 100%;
+  #image-slider, #news-slider {
+    /*margin-top: -8px;*/
+    width: 100%;
   }
 
   #contactform h1 {
@@ -744,24 +731,35 @@ i::after {
     margin-top: 50px;
   }
 
-  #quote {
+  #freequote_container {
     width: 100%;
-    padding: 0px 0px;
+
   }
 
   .col-container {
     padding: 0px 10px;
     margin-top: 0px;
   }
-
-  #left {
+  /* news navigation */
+  #left,#left_news {
     margin-left: -18px;
   }
-  #right {
+
+  #right,#right_news {
     margin-right: -18px;
   }
 
+  /* articles slider */
+  .item.active .articles {
+    padding: 0px 0px;
+    margin-bottom: 10px;
+  }
 
+  .item.active .articles a {
+    width: 70px;
+    margin-right: 10px;
+    font-size: 22px;
+  }
 
 }
 
@@ -801,12 +799,25 @@ i::after {
     font-size: 12px;
   }
 
-    #left {
+  #left {
     margin-left: -50px;
   }
   #right {
     margin-right: -50px;
   }
+
+  /* articles slider */
+  .item.active .articles {
+    padding: 0px 0px;
+    margin-bottom: 10px;
+  }
+
+  .item.active .articles a {
+    width: 85px;
+    margin-right: 10px;
+  }
+
+
 
 
 
@@ -821,6 +832,17 @@ i::after {
   }
   #navcol-1 ul {
     margin-right: -180px;
+  }
+
+  /* articles slider */
+  .item.active .articles {
+    padding: 0px 0px;
+    margin-bottom: 10px;
+  }
+
+  .item.active .articles a {
+    width: 110px;
+    margin-right: 10px;
   }
 
   

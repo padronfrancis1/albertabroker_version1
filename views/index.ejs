@@ -89,7 +89,9 @@
                     <li><a class="active" href="#life"><i class="fa fa-child fa-lg"></i>LIFE</a></li>
                     <li><a href="#health"><i class="fa fa-heart fa-lg" aria-hidden="true"></i>HEALTH</a></li>
                     <li><a href="#travel"><i class="fa fa-plane fa-lg" aria-hidden="true"></i>TRAVEL</a></li>
-                    <li><a href="#homeauto"><i class="fa fa-home fa-lg" aria-hidden="true"></i>HOME AND AUTO<!-- <i class="fa fa-car fa-lg" aria-hidden="true"></i> --></a></li>
+                    <li><a href="#homeauto"><i class="fa fa-home fa-lg" aria-hidden="true"></i>HOME AND AUTO
+                    <!-- <i class="fa fa-car fa-lg" aria-hidden="true"></i> --></a></li>
+                    <li><a href="#homeauto"><i class="fa fa-question fa-lg" aria-hidden="true"></i>ABOUT US</a></li>
                   </ul>
                 </div>
 
@@ -111,7 +113,7 @@
 
 </div>
 
-<div id="image-slider">
+<section id="image-slider">
 
     <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
       <!-- Indicators -->
@@ -173,149 +175,174 @@
       <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next"><img src="assets/img/right.png" class="right-arrow" /><span class="sr-only">Next</span></a> -->
     </div>
 
-</div>
+</section>
 
 
-<div id="quote">
-  <div class="container-fluid">
-    <div class="row">
-    
-      <div class="col-md-6 col-container">
+<section id="news-slider">
 
-        <form class="form-horizontal" method="post" action="/" data-toggle="validator" data-toggle="validator" role="form" id="contactform" style="padding: 0px 0px;">
+  <!-- <div class="row" style="margin: 10px auto;">
+    <div class="col-lg-12">
+          
 
-          <div class="col-lg-12">
-            <div class="form-group">
-              <h3> QUOTE - CAPTION HERE </h3>
-            </div>
+      <a class="right carousel-control" href="#myCarousel_news" role="button" data-slide="prev">
+        <span class="fa fa-caret-left" aria-hidden="true" id="left_news"></span>
+        
+      </a>
+
+      <a class="right carousel-control" href="#myCarousel_news" role="button" data-slide="next">
+        <span class="fa fa-caret-right" aria-hidden="true" id="right_news"></span>
+        
+      </a>
+
+    </div>
+  </div> -->
+
+  <div id="myCarousel_news" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner" role="listbox" style="padding: 0px 10px;padding-bottom: 30px;">
+      <h3>Articles </h3>
+
+      <div class="item active">
+
+        <div class="articles col-sm-12 col-md-4 col-lg-4">
+          <a href="#" class="pull-left" style=""><img src="assets/img/why.jpg" alt="why get an insurance" /></a>
+          <div class="media-body">
+            <h4 class="media-heading"><a href="#">Why should I get one ?</a></h4>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  laborum."</p>
           </div>
+        </div>
+
+        <div class="articles col-sm-12 col-md-4 col-lg-4">
+          <a href="#" class="pull-left"><img src="assets/img/time_is_gold.jpg" alt="why get an insurance" /></a>
+          <div class="media-body">
+            <h4 class="media-heading"><a href="#">Time is golden</a></h4>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  laborum."</p>
+          </div>
+        </div>
+
+        <div class="articles col-sm-12 col-md-4 col-lg-4">
+          <a href="#" class="pull-left">
+          <img src="assets/img/accidents_happen.jpg" alt="accidents happen" /></a>
+          <div class="media-body">
+            <h4 class="media-heading"><a href="#">Accidents always happen</a></h4>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  laborum."</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="freequote_container">
+
+  <div id="freequotes" class="carousel-inner" style="margin: 30px auto;">
+
+    <div class="" style="padding: 0px 10px;padding-bottom: 30px;">
+      <h3>Free Quotes </h3>
+
+      <div class="col-md-6" style="margin-bottom: 30px;">
+
+        <form class="form-horizontal" method="post" action="/" role="form" id="contactform">
 
           <div class="col-lg-12">
-              <div class="modal-header" style="padding: 0px 0px;">
-                   <!-- <h5>Get a link on your phone</h5>  -->
-                
 
-                <div class="form-group">
-                <div class="row">
-
-                  <div class="col-md-4" style="margin-bottom: 10px;">
-                      <label for="selectopt" style="float: left;">Send Via</label>
-                      <select class="form-control input-lg fontawesome-select" name="selectopt" id="selectopt" style="color:#000;">
-                        <option value="">--</option>
-                        <option value="contactus">Email</option>
-                        <option value="sms">SMS</option>
-                      </select>
-                  </div>
-
-
-                  <div class="col-md-8">
-                      <label for="fname" style="float: left;">Name:</label>
-                      <input class="form-control input-lg" id="fname" placeholder="First and Last Name" name="name">
-                  </div>
-
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-4" style="margin-bottom: 10px;">
+                  <label for="selectopt" style="float: left;">Send Via</label>
+                  <select class="form-control input-lg fontawesome-select" name="selectopt" id="selectopt" style="color:#000;">
+                    <option value="">--</option>
+                    <option value="contactus">Email</option>
+                    <option value="sms">SMS</option>
+                  </select>
                 </div>
 
+                <div class="col-md-8">
+                  <label for="fname" style="float: left;">Name:</label>
+                  <input class="form-control input-lg" id="fname" placeholder="First and Last Name" name="name">
                 </div>
-
-                  <div class="form-group">
-                  <div class="row">
-
-                    <div class="col-md-7" style="margin-bottom: 10px;">
-                        <label for="femail" style="float: left;">Email:</label>
-                        <input type="email" class="form-control input-lg" id="femail" placeholder="Email Address"  data-error="The email address is invalid" name="email">
-                      
-                    </div>
-
-                     <div class="col-md-5">
-                        <!-- <label for="phonenum">Phone Number</label><br/> -->
-                        <label for="phone" style="float: left;">Phone #:</label>
-                        <input id="fphone" name="phone" type="text" placeholder="Phone" class="form-control input-lg">
-                    </div>
-                  </div>
-
-                  </div>
-
-
-                  <div class="form-group">
-                    <!-- <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span> -->
-                    <div class="row">
-                      <div class="col-md-12">
-                          <label for="type" style="float: left;">Type of Insurance:</label>
-                          <select class="form-control input-lg fontawesome-select" id="type">
-                              <option value="fa-child">&#xf1ae;LIFE</option>
-                              <option value="fa-heart">&#xf004;HEALTH</option>
-                              <option value=" fa-plane">&#xf072;TRAVEL</option>
-                              <option value="fa-home">&#xf015;HOME</option>
-                              <option value=" fa-car">&#xf1b9;AUTO</option>
-                          </select>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="row">
-                    <div class="form-group">
-                      <!-- <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span> -->
-                      <div class="col-md-12">
-                        <label for="message" style="float: left;">Additional comments and details:</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>E-MAIL
-                    </button>
-                  </span>
-
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
-                    <i class="fa fa-envelope" aria-hidden="true"> SMS</i>
-                    </button>
-                  </span>
-
               </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-7" style="margin-bottom: 10px;">
+                  <label for="femail" style="float: left;">Email:</label>
+                  <input type="email" class="form-control input-lg" id="femail" placeholder="Email Address"  data-error="The email address is invalid" name="email">
+                </div>
+                 <div class="col-md-5">
+                    <label for="phone" style="float: left;">Phone #:</label>
+                    <input id="fphone" name="phone" type="text" placeholder="Phone" class="form-control input-lg">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-12">
+                    <label for="type" style="float: left;">Type of Insurance:</label>
+                    <select class="form-control input-lg fontawesome-select" id="type">
+                        <option value="fa-child">&#xf1ae;LIFE</option>
+                        <option value="fa-heart">&#xf004;HEALTH</option>
+                        <option value=" fa-plane">&#xf072;TRAVEL</option>
+                        <option value="fa-home">&#xf015;HOME</option>
+                        <option value=" fa-car">&#xf1b9;AUTO</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="message" style="float: left;">Additional comments and details:</label>
+                  <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>SEND
+                  </button>
+                </span>
+              </div>
+            </div>
+
+            <!-- <span class="input-group-btn pull-left" style="margin-right: -700px;">
+              <button class="btn btn-default" type="submit">
+              <i class="fa fa-envelope" aria-hidden="true">SMS</i>
+              </button>
+            </span> -->
+
           </div>
 
         </form>
 
       </div>
 
-      <div class="col-md-6 col-container">
-        <div class="row">
-          <div class="container-fluid">
-
-          <!-- <div class="col-lg-12">
-            <div class="form-group">
-              <h1 style=""> CAPTION HERE </h1>
-            </div>
-          </div> -->
-
-            <!-- <img src="assets/img/family-edited.jpg" alt="caption"  style="margin-left: auto;margin-right: auto; display: block;width: 70%;margin-bottom: 20px;" class="img-responsive"> -->
-            <div class="col-lg-12" style="padding: 5% 0px">
-              <div class="form-group">
-                <!-- <h1 style=""> QUOTE - CAPTION HERE </h1> -->
-                <div class="list-group" style="margin-top: 90px;">
-                  <a href="#" class="list-group-item disabled" style="font-size: 25px;">
-                    Popular
-                  </a>
-                  <a href="#" class="list-group-item"><i class="fa fa-caret-right" aria-hidden="true"></i>Dapibus ac facilisis in</a>
-                  <a href="#" class="list-group-item"><i class="fa fa-caret-right" aria-hidden="true"></i>Morbi leo risus</a>
-                  <a href="#" class="list-group-item"><i class="fa fa-caret-right" aria-hidden="true"></i>Porta ac consectetur ac</a>
-                  <a href="#" class="list-group-item"><i class="fa fa-caret-right" aria-hidden="true"></i>Vestibulum at eros</a>
-                </div>
-              </div>
-            </div>
-           
-            
-          </div>
-        </div>
-      </div>
-
     </div>
+
   </div>
-</div>
+
+</section>
+
+
+<!-- <div id="quote">
+  <div class="container-fluid">
+  <h3> Free Quote </h3>
+
+    
+
+
+  </div>
+</div> -->
 
 
 <!-- <div id="life">

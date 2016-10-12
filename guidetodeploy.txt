@@ -7,6 +7,7 @@ Install flightplan
 create deploy user
 log in
 create password-less
+
 create ssh (https://www.howtoforge.com/linux-basics-how-to-install-ssh-keys-on-the-shell)
 log in
 
