@@ -36,16 +36,16 @@ git push broker master
 ssh deploy
 -ssh deploy@138.197.142.182
 
-cd /var/www/broker/broker
+cd /var/www/broker/albertabroker_version1
 
-forever -stop app.js
+forever stop app.js
 -stops current deployed app.js
 
 delete old broker in ubuntu server
 go one folder up cd /var/www/broker
 
 delete directory and file
-rm -rf broker
+rm -rf albertabroker_version1
 
 cd into broker as deploy user
 it will ask fo the password = "user1"
