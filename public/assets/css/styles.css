@@ -18,10 +18,9 @@ h3 {
   padding: 10px 10px;
 }
 
-#main-body {
-  background: #E9EBEE;
-  width: 100%;
-  margin: 0 auto;
+/* parallax */
+.parallax {
+
 
 }
 
@@ -660,12 +659,35 @@ i::after {
 #services {
   width: 85%;
   margin: 40px auto;
-  padding: 0px 0px;
+  background: #2D3639;
+  padding-bottom: 40px;
+    /* The image used */
+  background-image: url("../img/consult.jpg");
+
+  /* Set a specific height */
+  /*height: 500px;*/
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-body {
+  background: #E9EBEE;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#service .row {
   background: #2D3639;
 }
 
 #services h3 {
   color: #fff;
+  padding: 1% 2%;
+  font-size: 33px;
 }
 
 #services h5 {
@@ -689,13 +711,31 @@ i::after {
   background: #2D3639;
   display: block;
   margin: 0 auto;
-  border: 1px solid #fff;
+  border: 0px solid #fff;
   padding: 40px 40px;
 }
 
 #services .btn a {
   color: #fff;
   font-size: 50px;
+}
+
+#services p {
+  text-align: left;  
+}
+
+#services .fa {
+  color: #fff;
+  font-size: 80px;
+}
+
+#services .media-body h4 a {
+  color: #fff;
+}
+
+#services .service-icon {
+  margin-bottom: 50px;
+  
 }
 
 /* extras */
@@ -750,6 +790,7 @@ footer {
 }
 /* responisve */
 @media screen and (max-width: 767px) {
+
   #group-logo {
     display: block;
   }
@@ -843,11 +884,20 @@ footer {
   }
 
   #services .btn {
-    padding: 60px 60px;
+    padding: 10px 10px;
     margin: 20px auto;
+    font-size: 50px;
   }
   #services h5 {
     font-size: 20px;
+  }
+
+  #services .fa {
+    font-size: 70px;
+  }
+
+  #services .fa.fa-heart {
+    font-size: 60px;
   }
 
 }
@@ -860,6 +910,11 @@ footer {
 
 
 @media (min-width: 768px)  and (max-width: 991px) {
+
+
+  .pull-left {
+     margin-left: 200px;
+  }
 
   #logo_b {
     display: block;
@@ -904,11 +959,11 @@ footer {
 
 
   #services .btn {
-    padding: 30px 30px;
+    padding: 10px 10px;
     margin: 20px auto;
   }
   #services .btn a {
-    font-size: 25px;
+    font-size: 35px;
   }
   #services h5 {
     font-size: 20px;
@@ -960,6 +1015,8 @@ footer {
     margin-left: 50px;
     width: 100%;
   }
+
+
 
 
   
