@@ -10,6 +10,22 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Motorious Home' });
 });
 
+router.get('/lifeinsurance', function(req, res, next) {
+  res.render('LifeInsurance', { title: 'Life Insurance' });
+});
+
+router.get('/healthinsurance', function(req, res, next) {
+  res.render('HealthInsurance', { title: 'Health Insurance' });
+});
+
+router.get('/travelinsurance', function(req, res, next) {
+  res.render('TravelInsurance', { title: 'Travel Insurance' });
+});
+
+router.get('/homeauto', function(req, res, next) {
+  res.render('HomeAutoInsurance', { title: 'Home and Auto Insurance' });
+});
+
 router.post('/contactus', function(req, res) {
 
   var mailOpts, smtpTrans;

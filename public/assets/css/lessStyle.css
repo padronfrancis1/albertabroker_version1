@@ -1,0 +1,21 @@
+#health_insurance .breadcrumb,
+#life_insurance .breadcrumb,
+#homeauto_insurance .breadcrumb,
+#travel_insurance .breadcrumb {
+  background: none;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#health_insurance .breadcrumb > li + li:before,
+#life_insurance .breadcrumb > li + li:before,
+#homeauto_insurance .breadcrumb > li + li:before,
+#travel_insurance .breadcrumb > li + li:before {
+  content: "\3E";
+  color: #000;
+}
+#nav-list li {
+  text-align: center;
+}

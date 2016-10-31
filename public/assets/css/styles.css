@@ -8,26 +8,33 @@ body, html {
 }
 
 
-* {
+/** {
   -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+   border-radius: 0 !important;
+}*/
+
+
+
+hr {
+  border: 1px solid #333;
 }
 
-h3 {
-  padding: 10px 10px;
-}
-
-/* parallax */
-.parallax {
-
-
-}
 
 /* Fonts */
 @font-face{
   font-family: pillgothic;
   src: url('../fonts/Pill_Gothic_600mg_Bold.ttf');
+}
+
+@font-face{
+  font-family: sanspro-reg;
+  src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face{
+  font-family: sanspro-light;
+  src: url('../fonts/SourceSansPro-Light.ttf');
 }
 
 /* navigation */
@@ -184,7 +191,6 @@ nav.navbar.shrink img {
 
 #nav-list .active {
   font-size: 14px;
-  /*color: red;*/
   border-bottom: 2px solid #fff;
   text-decoration: none;
 }
@@ -263,23 +269,6 @@ nav.navbar.shrink img {
    margin-bottom:50px;
 }
 
-/* parallax */
-.quote {
-  /* The image used */
-  /*background-image: url("../img/Auto-insurance-darker.jpg");*/
-
-  /* Set a specific height */
-
-
-  /* Create the parallax scrolling effect */
-  /*background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
-
-  color: #fff;
-}
-
 /* socila media icons */
 .socialmedia-icons {
   padding-right: 10%;
@@ -295,13 +284,8 @@ nav.navbar.shrink img {
     border: 3px solid #00CC00;
 }
 
-/* group logo */
-#group-logo {
-  display: none;
-}
-
 /* responisve */
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
   #group-logo {
     display: block;
   }
@@ -378,20 +362,17 @@ nav.navbar.shrink img {
 
 @media (min-width: 1200px) { 
 
-}
+}*/
 
 
 
 
-
-=======
 
 /* Authors Custom Style */
 
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
 }
 
@@ -617,7 +598,7 @@ i::after {
 
 /* image slider and news slider*/
 #image-slider,#news-slider {
-  width: 85%;
+  width: 70%;
   margin-top: 110px;
   padding: 0px 0px;
   margin-left: auto;
@@ -634,7 +615,7 @@ i::after {
 }
 
 #contactform {
-  color: #333;
+  color: #fff;
 }
 
 /* quote header 1 */
@@ -655,11 +636,10 @@ i::after {
   margin-right: -70px;
 }
 
-/* services */
+/* servifces */
 #services {
-  width: 85%;
+  width: 70%;
   margin: 40px auto;
-  background: #2D3639;
   padding-bottom: 40px;
     /* The image used */
   background-image: url("../img/consult.jpg");
@@ -703,22 +683,6 @@ i::after {
   margin-top: 10px;
 }
 
-#services .btn {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #2D3639;
-  display: block;
-  margin: 0 auto;
-  border: 0px solid #fff;
-  padding: 40px 40px;
-}
-
-#services .btn a {
-  color: #fff;
-  font-size: 50px;
-}
 
 #services p {
   text-align: left;  
@@ -740,19 +704,9 @@ i::after {
 
 /* extras */
 #extras {
-  width: 85%;
+  width: 70%;
   margin: 40px auto;
-  
   background: #E9EBEE;
-}
-
-#extras .btn {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #;
-  border: 1px solid #fff;
 }
 
 #extras .container-fluid {
@@ -765,9 +719,6 @@ i::after {
 }
 
 /* news */
-.item.active .articles {
-  
-}
 
 .item.active .articles a {
   margin-right: 10px;
@@ -776,6 +727,178 @@ i::after {
 
 .media-body .media-heading {
   font-family:pillgothic;
+}
+
+/* Life Insurance Page */
+.parallax_life_insurance {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 82px;
+  background: #2D3639;
+  padding: 2% 2%;
+  background-image: url("../img/raining.jpg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+#life_insurance img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+#life_insurance .content {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+#life_insurance .content h1 {
+  font-family: sanspro-reg;
+}
+
+#life_insurance .content  p{
+  font-family: sanspro-light;
+  font-size: 18px;
+
+}
+
+#life_insurance .content h3 {
+  padding: 10px 0px;
+  font-family: sanspro-light;
+}
+
+/* Health Insurance */
+.parallax_health_insurance {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 82px;
+  background: #2D3639;
+  padding: 2% 2%;
+  background-image: url("../img/raining.jpg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#health_insurance img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+#health_insurance .content {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+#health_insurance .content h1 {
+  font-family: sanspro-reg;
+}
+
+#health_insurance .content  p{
+  font-family: sanspro-light;
+  font-size: 18px;
+
+}
+
+#health_insurance .content h3 {
+  padding: 10px 0px;
+  font-family: sanspro-light;
+}
+
+/* Travel Insurance */
+.parallax_travel_insurance {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 82px;
+  background: #2D3639;
+  padding: 2% 2%;
+  background-image: url("../img/raining.jpg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#travel_insurance img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+#travel_insurance .content {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+#travel_insurance .content h1 {
+  font-family: sanspro-reg;
+}
+
+#travel_insurance .content  p{
+  font-family: sanspro-light;
+  font-size: 18px;
+
+}
+
+#travel_insurance .content h3 {
+  padding: 10px 0px;
+  font-family: sanspro-light;
+}
+
+/* Home and Auto Insurance */
+.parallax_homeauto_insurance {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 82px;
+  background: #2D3639;
+  padding: 2% 2%;
+  background-image: url("../img/raining.jpg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+#homeauto_insurance img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+#homeauto_insurance .content {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+#homeauto_insurance .content h1 {
+  font-family: sanspro-reg;
+}
+
+#homeauto_insurance .content  p{
+  font-family: sanspro-light;
+  font-size: 18px;
+
+}
+
+#homeauto_insurance .content h3 {
+  padding: 10px 0px;
+  font-family: sanspro-light;
 }
 
 
@@ -883,11 +1006,6 @@ footer {
     font-size: 22px;
   }
 
-  #services .btn {
-    padding: 10px 10px;
-    margin: 20px auto;
-    font-size: 50px;
-  }
   #services h5 {
     font-size: 20px;
   }
@@ -899,6 +1017,69 @@ footer {
   #services .fa.fa-heart {
     font-size: 60px;
   }
+
+
+  .parallax_life_insurance {
+    margin-top: 140px;
+  }
+
+  #life_insurance img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #life_insurance .content {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+
+  .parallax_health_insurance {
+    margin-top: 140px;
+  }
+
+  #health_insurance img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #health_insurance .content {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .parallax_travel_insurance {
+    margin-top: 140px;
+  }
+
+  #travel_insurance img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #travel_insurance .content {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .parallax_homeauto_insurance {
+    margin-top: 140px;
+  }
+
+  #homeauto_insurance img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #homeauto_insurance .content {
+    width: 100%;
+    margin-top: 10px;
+  }
+
 
 }
 
@@ -929,7 +1110,7 @@ footer {
     width: 100%;
   }
   #navcol-1 ul li a{
-    margin-left: -1px;
+    margin-left: -15px;
     
     font-size: 12px;
   }
@@ -947,10 +1128,16 @@ footer {
   }
 
   /* articles slider */
+
   .item.active .articles {
     padding: 0px 0px;
     margin-bottom: 10px;
   }
+
+  .pull-left {
+    margin-left: 0px;
+  }
+
 
   .item.active .articles a {
     width: 85px;
@@ -958,13 +1145,6 @@ footer {
   }
 
 
-  #services .btn {
-    padding: 10px 10px;
-    margin: 20px auto;
-  }
-  #services .btn a {
-    font-size: 35px;
-  }
   #services h5 {
     font-size: 20px;
   }
@@ -978,14 +1158,34 @@ footer {
   }
 
   .logo img {
-      width: 370px !important;
-      margin-left: 3px;
+    width: 370px !important;
+    margin-left: 3px;
       
   }
 
+  #life_insurance img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+  }
 
+  #health_insurance img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+  }
 
+  #travel_insurance img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+  }
 
+  #homeauto_insurance img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+  }
 
 }
 
@@ -1016,15 +1216,35 @@ footer {
     width: 100%;
   }
 
+  #life_insurance img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
 
+  #health_insurance img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
 
+  #travel_insurance img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
 
+  #homeauto_insurance img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
   
 }
 
 
 @media screen and (min-width: 768px) {
-
+  
 }
 
 @media (min-width: 992px) { 
