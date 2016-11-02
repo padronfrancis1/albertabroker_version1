@@ -63,6 +63,5 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
-var port = Number(process.env.PORT || 80);
-// var port = Number(process.env.PORT);
+var port = Number(process.env.PORT || 5000);
 http.createServer(app).listen(port);
