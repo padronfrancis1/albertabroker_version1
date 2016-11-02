@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Motorious Home' });
 });
 
-router.get('/home', function(req, res, next) {
+router.get('/homepage', function(req, res, next) {
   res.render('index', { title: 'Motorious Home' });
 });
 
