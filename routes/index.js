@@ -7,6 +7,10 @@ var xoauth2 = require('xoauth2');
 var twilio = require('twilio');
 
 /* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Motorious Home' });
+});
+
 router.get('/home', function(req, res, next) {
   res.render('index', { title: 'Motorious Home' });
 });
