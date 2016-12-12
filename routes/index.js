@@ -31,6 +31,18 @@ router.get('/homeauto', function(req, res, next) {
   res.render('HomeAutoInsurance', { title: 'Home and Auto Insurance' });
 });
 
+router.get('/quote', function(req, res, next) {
+  res.render('quote', { title: 'Home and Auto Insurance' });
+});
+
+router.get('/messageSent', function(req, res, next) {
+  res.render('MessageSent', { title: 'Home and Auto Insurance' });
+});
+
+router.get('/messageFailed', function(req, res, next) {
+  res.render('MessageFailed', { title: 'Home and Auto Insurance' });
+});
+
 router.post('/contactus', function(req, res) {
 
   var mailOpts, smtpTrans;
@@ -56,21 +68,20 @@ router.post('/contactus', function(req, res) {
     // to: 'francisjohnpadron@yahoo.com',
     subject: 'Message from the Client - ' + req.body.name,
     
-    text: 'name : ' + '   ' + req.body.name + '   ' +   'Message : ' + '   ' + req.body.message + '   ' +  'email address : ' + req.body.email + '   ' +  'phone: ' + req.body.phone
+    text: 'name : ' + '   ' + req.body.name + '   ' +   'Insurance Type : ' + '   ' + req.body.type + '   ' +  'email address : ' + req.body.email + '   '  +  'Message: ' + req.body.message
   };
 
   smtpTrans.sendMail(mailOpts, function(error, info){
     
     if(error) {
 
-     
-     
-	 res.render('index', { title: 'Motorious Home' });
+	   res.render('MessageFailed', { title: 'Message Failed' });
     }
     else {
 
-      res.render('index', { title: 'Motorious Home' });
+      res.render('MessageSent', { title: 'Message Sent!' });
     }
+
   });
 
 });
@@ -80,23 +91,28 @@ router.post('/sms', function(req, res) {
 
 
 // Find your account sid and auth token in your Twilio account Console.
-var client = twilio('ACaed4ee145e5c490b8c8123895247f81f', 'c08c046c1feebad4d0531054e17442e1');
+//  var client = twilio('ACaed4ee145e5c490b8c8123895247f81f', 'c08c046c1feebad4d0531054e17442e1');
+var client = twilio('ACb1d4883f47181b77b8e00b2c01a2e33d', '678c16096ad810255d8b5c35ca277fcf');
 
   // Send the text message.
   var x = client.sendMessage({
     // to: '4039185507',
-    to: '+14039185507',
-    from: '+15873338675',
-    body: 'Hello from Client!'
+    // to: '+14039185507',
+    // from: '+15873338675',
+    from: '+15873174109',
+    to: '4037141510',
+    body: 'Client Name :' + req.body.name + '\nInsurance type :' + req.body.type + '\nClient Phone :' + req.body.phone + '\nClient email :' + req.body.email +  '\nMessage: ' + req.body.message
   
   });
 
   if(x) {
-    res.render('index', { title: 'Motorious Home' });
+    
+    res.render('MessageSent', { title: 'Message Sent!' });
+    
   }
-    else{
-      res.render('index', { title: 'Motorious Home' });
-    }
+  else{
+    res.render('MessageFailed', { title: 'Message Failed' });
+  }
   
 });
 

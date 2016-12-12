@@ -1,0 +1,20 @@
+
+/* Fonts */
+@font-face{
+  font-family: pillgothic;
+  src: url('../fonts/Pill_Gothic_600mg_Bold.ttf');
+}
+
+@font-face{
+  font-family: sanspro-reg;
+  src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face{
+  font-family: sanspro-light;
+  src: url('../fonts/SourceSansPro-Light.ttf');
+}
+
+
+
+

@@ -1,8 +1,0 @@
-acct # 127414696
-password: Myalbertabroker134
-
-0210
-
-old Nameserver
-ns49.domaincontrol.com
-ns50.domaincontrol.com

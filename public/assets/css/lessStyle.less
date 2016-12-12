@@ -1,10 +1,36 @@
-//  body
+/* body */
 body {
-  background: #e2e1e0;
+
+  /* background: #e2e1e0;
+  background: ##E9EBEE; */
+  background: #83878D;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+/* hr */
+
+hr {
+  border: 1px solid #333;
+}
+
+/* logo a and b */
+
+#logo_b {
+  display: none;
+}
+
+/* space between icons and menu */
+i::after {
+  content: "\00a0";
 }
 
 
-//	breadcrumbs
+
+/* breadcrumbs */
 
 #health_insurance, #life_insurance, #homeauto_insurance, #travel_insurance {
     
@@ -23,7 +49,8 @@ body {
 	}
 }
 
-//  navigation
+/* navigation */
+
 #navigation {
     background: #2297C2;
     overflow: hidden;
@@ -47,55 +74,481 @@ body {
         }
     }
 }
-//  image slider
+
+/* image carousel and slider */
 
 #image-slider {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 90px;
+    margin-top: 82px;
+    padding: 4% 4%;
 }
 
-//  services
+.carousel-inner img  {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+#myCarousel {
+  width: 100%;
+  padding: 0px 0px;
+  border: 0px solid #333;
+}
+
+/* carousel fade effet */
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+
+/* services */
 
 #services {
 
+  width: 100%;
+  margin: 0 auto;
+  color: #000;
+  padding: 4% 4%;
+
+
+  .row {
     width: 100%;
-    margin: 0 auto;
-    color: #000;
+    margin: 0px auto;
+    border: 0px solid #DADADA;
+    background: #EEEEEE;
+    padding: 0px 10px;
+  }
 
-    h2 {
-      text-align: center;
-      
-    }
+  h2 {
+    text-align: center;
+    color: #fff;
+    padding: 1% 3%;      
+  }
 
-    .label {
-      color: #fff;
-      float: left;
-      font-size: 18px;
-    }    
+  .label {
+    color: #fff;
+    float: left;
+    font-size: 18px;
+  }
+
+
+  .img-responsive {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .btn {
+    //  background: #433F40;
+    //  border: 3px solid #000;
+    //  padding: 1% 1%;
+    font-size: 15px;
+  }
+   
 }
 
-//  free quote
-.freequote {
+/* freequote */
 
+#freequote {
+
+  width: 100%;
+  margin: 0 auto;
+  color: #000;
+  padding: 4% 4%;
+
+
+   .row {
+    width: 100%;
+    margin: 0px auto;
+    border: 0px solid #DADADA;
+    background: #EEEEEE;
+    padding: 0px 10px;
+  }
+
+
+  h2 {
+    padding: 3% 3%;
+    text-align: center;
+    color: #000;
+  }
+
+  h4 {
+    padding: 3% 3%;
+    text-align: left;
+    color: #000;
+  }
+
+  .form {
+    border: 0px solid #D78106;
+    width: 80%;
+    margin: 0 auto;
+
+    .row {
+      width: 100%;
+      padding: 0px 0px;
+    }
+
+    p {
+      font-size: 18px;
+      font-style: bold;
+      color: #000;
+    }
+
+    .form-control {
+      color:#000;
+      border-radius: 0px 0px 0px 0px;
+      margin-bottom: 35px;
+    }
+
+    //  validation
+    .my-error-class {
+        border: 3px solid #FF0000;
+    }
+
+    .my-valid-class {
+        color:#009638; /* green */
+    }
+
+    .fontawesome-select {
+        font-family: 'FontAwesome', 'Helvetica';
+    }
+
+    
+  }  
+}
+
+/* Quote page */
+
+#quote {
+
+  width: 100%;
+  margin: 0 auto;
+  color: #000;
+  padding: 4% 4%;
+  margin-top: 82px;
+
+
+   .row {
+    width: 100%;
+    margin: 0px auto;
+    border: 0px solid #DADADA;
+    background: #EEEEEE;
+    padding: 0px 10px;
+  }
+
+
+  h2 {
+    padding: 3% 3%;
+    text-align: center;
+    color: #000;
+  }
+
+  h4 {
+    padding: 3% 3%;
+    text-align: left;
+    color: #000;
+  }
+
+  .form {
+    border: 0px solid #D78106;
+    width: 80%;
+    margin: 0 auto;
+
+    .row {
+      width: 100%;
+      padding: 0px 0px;
+    }
+
+    p {
+      font-size: 18px;
+      font-style: bold;
+      color: #000;
+    }
+
+    .form-control {
+      color:#000;
+      border-radius: 0px 0px 0px 0px;
+      margin-bottom: 35px;
+    }
+
+    //  validation
+    .my-error-class {
+        border: 3px solid #FF0000;
+    }
+
+    .my-valid-class {
+        color:#009638; /* green */
+    }
+
+    .fontawesome-select {
+        font-family: 'FontAwesome', 'Helvetica';
+    }
+
+    
+  }  
+}
+
+/* Life Insurance Page */
+
+.parallax_life_insurance {
+
+  width: 100%;
   margin: 0px auto;
+  margin-top: 82px;
   background: #2D3639;
-  background-image: url("../img/consult.jpg");
+  padding: 2% 2%;
+  background-image: url("../img/family_background_draft.jpg");
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  .form {
-    border: 0px solid #D78106;
-    width: 40%;
+}
+
+#life_insurance {
+
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  padding: 4% 4%;
+
+    img {
+
+      width: 30%;
+      display: block;
+      margin: 100px auto;
+    }
+
+    .content {
+
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 100px;
+
+      h1 {
+        font-family: sanspro-reg;
+      }
+
+      p {
+        font-family: sanspro-light;
+        font-size: 18px;
+      }
+
+      h3 {
+        padding: 10px 0px;
+        font-family: sanspro-light;
+      }
+
+    }
+
+}
+
+/* Health Insurance Page */
+
+.parallax_health_insurance {
+
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 82px;
+  background: #2D3639;
+  padding: 2% 2%;
+  background-image: url("../img/life_insurance_background.jpg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#health_insurance {
+
+  background-color: #fff;
+  width: 100%;
+  width: 100%;
+  padding: 4% 4%;
+
+  img {
+    width: 30%;
+    display: block;
+    margin: 100px auto;
+  }
+
+  .content {
+
+    width: 50%;
     margin: 0 auto;
-    padding-bottom: 2%;
-  }  
+    margin-bottom: 100px;
+
+    h1 {
+      font-family: sanspro-reg;
+    }
+
+    p{
+      font-family: sanspro-light;
+      font-size: 18px;
+    }
+
+    h3 {
+      padding: 10px 0px;
+      font-family: sanspro-light;
+    }
+
+  }
+
+
+}
+
+/* Travel Insurance Page */
+
+.parallax_travel_insurance {
+
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 82px;
+  background: #2D3639;
+  padding: 2% 2%;
+  background-image: url("../img/sky.jpg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#travel_insurance {
+  background-color: #fff;
+  width: 100%;
+  width: 100%;
+  padding: 4% 4%;
+
+  img {
+    width: 30%;
+    display: block;
+    margin: 100px auto;
+  }
+
+  .content {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    h1 {
+      font-family: sanspro-reg;
+    }
+
+    p {
+      font-family: sanspro-light;
+      font-size: 18px;
+    }
+
+    h3 {
+      padding: 10px 0px;
+      font-family: sanspro-light;
+    }
+
+  }
+}
+
+/* Home and Auto Insurance Page */
+
+.parallax_homeauto_insurance {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 82px;
+  background: #2D3639;
+  padding: 2% 2%;
+  background-image: url("../img/homeandauto_background.jpg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#homeauto_insurance {
+  background-color: #fff;
+  width: 100%;
+  width: 100%;
+  padding: 4% 4%;
+
+  img {
+    width: 30%;
+    display: block;
+    margin: 100px auto;
+  }
+
+  .content {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    h1 {
+      font-family: sanspro-reg;
+    }
+
+    p {
+      font-family: sanspro-light;
+      font-size: 18px;
+    }
+
+    h3 {
+      padding: 10px 0px;
+      font-family: sanspro-light;
+    }
+
+  }
+
+}
+
+/* remove carousel caret shadows */
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+
+/* footer */
+
+footer {
+  margin: 0px auto;
+  background: #045F82;
+  color: #fff;
+  bottom: 0px;
+  position: relative;
+  padding-top: 3%;
 }
 
 /* responisve */
+
 @media screen and (max-width: 767px) {
 
   #group-logo {
@@ -142,45 +595,41 @@ body {
 
   #image-slider, #news-slider, #services, #extras {
     width: 100%;
-  }
-
-  #contactform h1 {
-    font-size: 18px;
-    margin-top: 0px;
-    float: left;
-    margin-left: 0px;
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  #freequote_container {
-    width: 100%;
 
   }
 
-  .col-container {
-    padding: 0px 10px;
-    margin-top: 0px;
-  }
-  /* news navigation */
-  #left,#left_news {
-    margin-left: -18px;
-  }
-
-  #right,#right_news {
-    margin-right: -18px;
+  #services {
+    .container-fluid {
+      width: 100%;
+      padding: 0px 0px;
+    }
+    .row {
+      width: 100%;
+      padding: 0px 0px;
+    }
   }
 
-  /* articles slider */
-  .item.active .articles {
-    padding: 0px 0px;
-    margin-bottom: 10px;
-  }
+  #freequote {
+    .container-fluid {
+      width: 100%;
+      padding: 0px 0px;
+    }
+    .row {
+      width: 100%;
+      padding: 0px 0px;
+    }
 
-  .item.active .articles a {
-    width: 70px;
-    margin-right: 10px;
-    font-size: 22px;
+  }
+  #quote {
+    .container-fluid {
+      width: 100%;
+      padding: 0px 0px;
+      margin-top: 12px;
+    }
+    .row {
+      width: 100%;
+      padding: 0px 0px;
+    }
   }
 
   #services h5 {
@@ -195,70 +644,84 @@ body {
     font-size: 60px;
   }
 
-
-  .parallax_life_insurance {
-    margin-top: 140px;
-  }
-
-  #life_insurance img {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  #life_insurance .content {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-
-  .parallax_health_insurance {
-    margin-top: 140px;
-  }
-
-  #health_insurance img {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  #health_insurance .content {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .parallax_travel_insurance {
-    margin-top: 140px;
-  }
-
-  #travel_insurance img {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  #travel_insurance .content {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .parallax_homeauto_insurance {
-    margin-top: 140px;
-  }
-
-  #homeauto_insurance img {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  #homeauto_insurance .content {
-    width: 100%;
-    margin-top: 10px;
-  }
-
   #image-slider {
-    margin-top: 123px;
+    margin-top: 122px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #health_insurance {
+
+    .parallax_health_insurance {
+      margin-top: 122px;
+    }
+
+    img {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+  }
+
+  #life_insurance {
+
+    .parallax_life_insurance {
+      margin-top: 122px;
+    }
+
+    img {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  
+  #travel_insurance {
+
+    .parallax_travel_insurance {
+      margin-top: 122px;
+    }
+
+    img {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  #homeauto_insurance {
+
+    .parallax_homeauto_insurance {
+      margin-top: 122px;
+    }
+
+    img {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 10px;
+    }
   }
 
 
@@ -329,28 +792,79 @@ body {
     margin-top: 72px;
   }
 
-  #life_insurance img {
-    width: 40%;
-    display: block;
-    margin: 0 auto;
+
+    #health_insurance {
+
+    .parallax_health_insurance {
+      margin-top: 70px;
+    }
+
+    img {
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 70px;
+    }
+
   }
 
-  #health_insurance img {
-    width: 40%;
-    display: block;
-    margin: 0 auto;
+  #life_insurance {
+
+    .parallax_life_insurance {
+      margin-top: 70px;
+    }
+
+    img {
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 10px;
+    }
   }
 
-  #travel_insurance img {
-    width: 40%;
-    display: block;
-    margin: 0 auto;
+  
+  #travel_insurance {
+
+    .parallax_travel_insurance {
+      margin-top: 70px;
+    }
+
+    img {
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 10px;
+    }
   }
 
-  #homeauto_insurance img {
-    width: 40%;
-    display: block;
-    margin: 0 auto;
+  #homeauto_insurance {
+
+    .parallax_homeauto_insurance {
+      margin-top: 70px;
+    }
+
+    img {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 10px;
+    }
   }
 
 }

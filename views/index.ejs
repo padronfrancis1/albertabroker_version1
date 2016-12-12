@@ -3,30 +3,33 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> 
-<html class="no-js"> <!--<![endif]-->
+<html ng-app="broker">
 
 <head>
     <meta charset="utf-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     <title>My Alberta broker</title>
+
     <meta name="description" content="My Alberta Broker - Life, Health, Travel, Home and Auto Insurance">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/lessStyle.css">
+
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
 
     <link rel="stylesheet" href="assets/bootstrap/fonts/font-awesome.min.css">
-    <style type="text/css">
 
-
-    </style>
 
 
 </head>
 
-<body>
+<body style="background: #E9EBEE;">
   <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
@@ -35,378 +38,226 @@
 
 
 <section id="image-slider">
-<div class="container-fluid">
-<div class="row">
-  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="container-fluid">
+  <div class="row">
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-    <div class="carousel-inner" role="listbox" style="padding: 0px 0px;margin-bottom: 0px;">
-      <div class="item active" style="padding: 0px 0px;">
+      <div class="carousel-inner" role="listbox" style="padding: 0px 0px;margin-bottom: 0px;">
+        <div class="item active" style="padding: 0px 0px;">
 
-        <img src="assets/img/Life-insurance.jpg" alt="my alberta broker - life Insurance">
+          <img src="assets/img/Life-insurance.jpg" alt="my alberta broker - life Insurance" />
+        </div>
+
+        <div class="item">
+          <img src="assets/img/Auto-insurance.jpg" alt="auto insurance">
+        </div>
+
+        <div class="item">
+          <img src="assets/img/Travel-Insurance.jpg" alt="auto insurance">
+        </div>
+
+
+        <div class="item" style="padding: 0px 0px;">
+          <img src="assets/img/my alberta broker - fast and accurate.jpg" alt="my alberta broker - fast and accurate">
+        </div>
+
+        <div class="item">
+          <img src="assets/img/my alberta broker.jpg" alt="my alberta broker">
+        </div>
+
       </div>
 
-      <div class="item">
-        <img src="assets/img/Auto-insurance.jpg" alt="auto insurance">
-      </div>
-
-      <div class="item">
-        <img src="assets/img/Travel-Insurance.jpg" alt="auto insurance">
-      </div>
-
-
-      <div class="item" style="padding: 0px 0px;">
-        <img src="assets/img/my alberta broker - fast and accurate.jpg" alt="my alberta broker - fast and accurate">
-      </div>
-
-      <div class="item">
-        <img src="assets/img/my alberta broker.jpg" alt="my alberta broker">
-      </div>
-
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" id="left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" id="right"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
 
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" id="left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" id="right"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-
-</div>
-</div>
+  </div>
 </section>
 
-<section id="services">
+<section id="services" style="border: 0px solid red;">
 
-  <div class="container-fluid">
-
-    <!-- <div class="row">
-
-      <div class="col-md-12">
-
-        <h3>Services</h3>
-
-        <div class="row">
-            
-            
-          <div class="col-xs-12 col-sm-12 col-md-3">
-                
-            <h4 style="text-align: left;color: #fff;">Life Insurance</h4>
-
-            <a href="/lifeinsurance" class="pull-left">
-              <button type="submit" class="btn btn-info" style="margin-right: 10px;">
-                <h4 style="font-family: sans-serif;">Learn More</h4>
-              </button>
-              <i class="fa fa-child fa-lg" style="color: #9DBCC8;font-size: 3em;"></i>
-              
-            </a>
-
-          </div>
-                        
-              
-          <div class="col-xs-12 col-sm-12 col-md-3">
-          
-            <h4 style="text-align: left;color: #fff;">Health Insurance</h4>
-            
-            <a href="/healthinsurance" class="pull-left">
-              <button type="submit" class="btn btn-info" style="margin-right: 10px;">
-                <h4 style="font-family: sans-serif;">Learn More</h4>
-              </button>
-              <i class="fa fa-heart fa-lg" style="color: #D17171;font-size: 3em;"></i>
-              
-            </a>
-
-          </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-3">
-          
-            <h4 style="text-align: left;color: #fff;">Travel Insurance</h4>
-            
-            <a href="/travelinsurance" class="pull-left">
-              <button type="submit" class="btn btn-info" style="margin-right: 10px;">
-                <h4 style="font-family: sans-serif;">Learn More</h4>
-              </button>
-              <i class="fa fa-plane fa-lg" style="color: #EBCCB8;font-size: 3em;"></i>
-              
-            </a>
-
-          </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-3">
-          
-            <h4 style="text-align: left;color: #fff;">Home and Auto Insurance</h4>
-            
-            <a href="/homeauto" class="pull-left">
-              <button type="submit" class="btn btn-info" style="margin-right: 10px;">
-                <h4 style="font-family: sans-serif;">Learn More</h4>
-              </button>
-              <i class="fa fa-home fa-lg" style="color: #C7C8AB;font-size: 3em;"></i>
-              
-            </a>
-
-          </div>
-        </div>
-
-        
-
-      </div>
-    </div> -->
+  <div class="container-fluid" style="padding: 0px 0px;">
 
     <div class="row">
-      <h2> Services </h2>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="thumbnail">
-          <img src="assets/img/family.jpg">
-            <div class="caption">
-              <h4>Life Insurance</h4>
-              <a href="/lifeinsurance" class="btn btn-info btn-xs" role="button">Learn More</a> 
-          </div>
-        </div>
-      </div>
 
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="thumbnail">
-          <img src="assets/img/health.jpg">
-            <div class="caption">
-              <h4>Health Insurance</h4>
-              <a href="healthinsurance" class="btn btn-info btn-xs" role="button">Learn More</a> 
-          </div>
-        </div>
-      </div>
+      <h2 style="color:#000;"> Services </h2>
 
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="thumbnail">
-          <img src="assets/img/travel.jpg">
-            <div class="caption">
-              <h4>Travel Insurance</h4>
-              <a href="travelinsurance" class="btn btn-info btn-xs" role="button">Learn More</a> 
-          </div>
-        </div>
-      </div>
+      <div class="thumbnail" style="padding: 0px 0px; background: #fff;border: 0px solid red;">
 
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="thumbnail">
-          <img src="assets/img/homeandauto.jpg">
-            <div class="caption">
-              <h4>Home and Auto</h4>
-              <a href="homeauto" class="btn btn-info btn-xs" role="button">Learn More</a> 
+        <div class="col-xs-12 col-sm-6 col-md-3" style="padding: 0px 10px;">
+
+          <div class="thumbnail" style="padding: 0px 0px;">
+            <img src="assets/img/life_insurance_.jpg" class="img-responsive" style="width: 100%;">
+              <div class="caption" style="background: #fff;">
+                <h4>Life Insurance</h4>
+                <a href="lifeinsurance">Learn More</a> 
+            </div>
           </div>
         </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3" style="padding: 0px 10px;">
+          <div class="thumbnail" style="padding: 0px 0px;">
+            <img src="assets/img/health_.jpg" class="img-responsive"  style="width: 100%;">
+              <div class="caption" style="background: #fff;">
+                <h4>Health Insurance</h4>
+                <a href="healthinsurance">Learn More</a> 
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3" style="padding: 0px 10px;">
+          <div class="thumbnail" style="padding: 0px 0px; background: #E2E1E0;">
+            <img src="assets/img/travel.jpg" class="img-responsive"  style="width: 100%;">
+              <div class="caption" style="background: #fff;">
+                <h4>Travel Insurance</h4>
+                <a href="travelinsurance">Learn More</a> 
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3" style="padding: 0px 10px;">
+          <div class="thumbnail" style="padding: 0px 0px; background: #E2E1E0;">
+            <img src="assets/img/homeandauto.jpg" class="img-responsive"  style="width: 100%;">
+              <div class="caption" style="background: #fff;">
+                <h4>Home and Auto</h4>
+                <a href="homeauto">Learn More</a> 
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
-
-
-    <div class="row freequote">
-        <div class="col-md-12">
-
-          <h2 style="color: #fff;"> Free Quote </h2>
-
-            <form class="form" method="post" action="/" role="form" id="contactform">
-
-            <div class="row">
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 10px;">
-                    <label for="selectopt" class="label">Send Via</label>
-                    <select class="form-control input-md fontawesome-select" name="selectopt" id="selectopt" style="color:#000;">
-                      <option value="">--</option>
-                      <option value="contactus">Email</option>
-                      <option value="sms">SMS</option>
-                    </select>
-                </div>
-
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 10px;">
-                    <label for="fname" class="label">Name:</label>
-                    <input class="form-control input-md" id="fname" placeholder="First and Last Name" name="name">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 10px;">
-                    <label for="femail"  class="label">Email:</label>
-                    <input type="email" class="form-control input-md" id="femail" placeholder="Email Address"  data-error="The email address is invalid" name="email">
-                </div>
-
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 10px;">
-                    <label for="phone" class="label">Phone #:</label>
-                    <input id="fphone" name="phone" type="text" placeholder="Phone" class="form-control input-md">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 10px;">
-                  <label for="type" class="label">Type of Insurance:</label>
-                  <select class="form-control input-md fontawesome-select" id="type">
-                      <option value="fa-child">&#xf1ae;LIFE</option>
-                      <option value="fa-heart">&#xf004;HEALTH</option>
-                      <option value=" fa-plane">&#xf072;TRAVEL</option>
-                      <option value="fa-home">&#xf015;HOME</option>
-                      <option value=" fa-car">&#xf1b9;AUTO</option>
-                  </select>
-                </div>
-            </div>
-
-            <button type="submit" class="btn btn-info"><i class="fa fa-envelope" aria-hidden="true" style="font-size: 2em;"></i>Send</button>
-
-
-            </form>
-
-        </div>  
-    </div>
-
-
 
   </div>
     
-
 </section>
 
-<section id="extras">
-  <div class="container-fluid">
+<section id="freequote" style="border: 0px solid red;">
+
+  <div class="container-fluid" style="padding: 0px 0px;">
+
     <div class="row">
 
-        <!-- <div class="col-md-4">
-        
-          <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action active"><i class="fa fa-info-circle" aria-hidden="true"></i>FAQ</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Dapibus ac facilisis in</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Morbi leo risus</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Porta ac consectetur ac</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Dapibus ac facilisis in</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Morbi leo risus</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Porta ac consectetur ac</button>
+      <div class="thumbnail" style="padding: 0px 0px; background: #fff;border: 0px solid red;">
+
+
+        <div class="col-xs-12 col-sm-12 col-md-6" style="padding: 0px 0px;">
+          <div class="thumbnail" style="padding-top: 23px; background: #EEEEEE;border: 0px solid red;box-shadow: none;">
+
+            <img src="assets/img/contactAlbertaBroker900x700.jpg" alt="my alberta broker - life Insurance" class="img-responsive" style="display: block;margin: 0 auto;" />
+           <!--  <h2 style="color: #fff;background: #045F82;"> Contact Info </h2>
+            <div class="form">
+              <h4 style="color: #fff;">Phone: +1 (403) 714-1510</h4>
+              <h4 style="color: #fff;">Email:</h4>
+              <h4 style="color: #fff;">Facebook:</h4>
+            </div> -->
           </div>
+        </div>
 
-        </div> -->
+        <div class="col-xs-12 col-sm-12 col-md-6" style="padding: 0px 0px;padding-right: 10px;border: 0px solid red;">
 
-        <!-- <div class="col-md-4">
-        
-          <div class="list-group" style="background:#fff;">
+            <h2 style="color:#333; background:#EEEEEE;"> Free Quote </h2>
 
-            <button type="button" class="list-group-item list-group-item-action active"> FREE - QUOTE </button>
+              <form class="form" method="post" action="/" role="form" id="contactform" style="border: 0px solid red;padding: 0px 30px;width: 100%;">
 
-            <form class="" method="post" action="/" role="form" id="contactform" style="padding: 1% 5%;">
+                <div class="row" style="width: 100%;padding: 0px 0px;">
 
-              <div class="row">
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 10px;">
-                  <label for="selectopt" style="float: left;">Send Via</label>
-                  <select class="form-control input-md fontawesome-select" name="selectopt" id="selectopt" style="color:#000;">
-                    <option value="">--</option>
-                    <option value="contactus">Email</option>
-                    <option value="sms">SMS</option>
-                  </select>
+                    <div class="col-sm-12 col-md-4">
+
+                        <p style="color:#000;">Send Via</p>
+                        <select class="form-control input-md fontawesome-select" name="selectopt" id="selectopt">
+                          <option value="">--</option>
+                          <option value="contactus">Email</option>
+                          <option value="sms">SMS</option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-12 col-md-8">
+                        <p style="color:#000;">Name:</p>
+                        <input class="form-control input-md" id="fname" placeholder="First and Last Name" name="name">
+                    </div>
                 </div>
 
-                <div class="col-sm-12 col-md-12" style="">
-                  <label for="fname" style="float: left;">Name:</label>
-                  <input class="form-control input-md" id="fname" placeholder="First and Last Name" name="name">
+                <div class="row" style="width: 100%;">
+                    <div class="col-sm-12 col-md-4">
+                        <p style="color:#000;">Email:</p>
+                        <input type="email" class="form-control input-md" id="femail" placeholder="Email Address"  data-error="The email address is invalid" name="email">
+                    </div>
+
+                    <div class="col-sm-12 col-md-8">
+                        <p style="color:#000;">Phone #: (format: xxx-xxx-xxxx)</p>
+                        <input id="fphone" name="phone" type="text" placeholder="Phone" class="form-control input-md">
+                    </div>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 10px;">
-                  <label for="femail" style="float: left;">Email:</label>
-                  <input type="email" class="form-control input-md" id="femail" placeholder="Email Address"  data-error="The email address is invalid" name="email">
+                <div class="row" style="width: 100%;">
+                    <div class="col-sm-12 col-md-4">
+                      <p style="color:#000;">Type of Insurance:</p>
+                      <select class="form-control input-md fontawesome-select" id="type" name="type">
+                          <option value="Life Insurance">&#xf1ae;LIFE</option>
+                          <option value="Health Insurance">&#xf004;HEALTH</option>
+                          <option value="Travel Insurance">&#xf072;TRAVEL</option>
+                          <option value="Home Insurance">&#xf015;HOME</option>
+                          <option value="Auto Insurance">&#xf1b9;AUTO</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                      <p style="color:#000;">Message</p>
+                      <textarea style="width: 100%;" name="message" rows="4"></textarea>
+                    </div>
                 </div>
 
-                 <div class="col-sm-12 col-md-12" style="margin-bottom: 10px;">
-                    <label for="phone" style="float: left;">Phone #:</label>
-                    <input id="fphone" name="phone" type="text" placeholder="Phone" class="form-control input-md">
+
+                <div class="row" style="margin-bottom: 50px;">
+                    <div class="col-sm-12 col-md-12">
+                      <button type="submit" class="btn btn-info"><i class="fa fa-envelope" aria-hidden="true" style="font-size: 2em;"></i>Send</button>
+                    </div>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 10px;">
-                    <label for="type" style="float: left;">Type of Insurance:</label>
-                    <select class="form-control input-md fontawesome-select" id="type">
-                        <option value="fa-child">&#xf1ae;LIFE</option>
-                        <option value="fa-heart">&#xf004;HEALTH</option>
-                        <option value=" fa-plane">&#xf072;TRAVEL</option>
-                        <option value="fa-home">&#xf015;HOME</option>
-                        <option value=" fa-car">&#xf1b9;AUTO</option>
-                    </select>
-                </div>
-              </div>
+              </form>
 
-              <div class="row">
-                <div class="col-sm-12 col-md-12">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit" style="border: 2px solid #000;">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>SEND
-                    </button>
-                  </span>
-                </div>
-              </div>
+        </div>
 
-            </form>
 
-          </div>
 
-        </div> -->
-
-        <!-- <div class="col-md-4">
-        
-          <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action active"><i class="fa fa-info-circle" aria-hidden="true"></i>Quick Links</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Dapibus ac facilisis in</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Morbi leo risus</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Porta ac consectetur ac</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Dapibus ac facilisis in</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Morbi leo risus</button>
-            <button type="button" class="list-group-item list-group-item-action"><i class="fa fa-caret-right" aria-hidden="true"></i>Porta ac consectetur ac</button>
-          </div>
-
-        </div> -->
+      </div>
 
     </div>
+
   </div>
+    
 </section>
+
+
 <% include ./partials/footer %>
 
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/additional-methods.min.js"></script>
-    
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="assets/js/additional-methods.min.js"></script>
     <script type="text/javascript">
-
       document.getElementById('selectopt').onchange = function() {
         document.getElementById('contactform').action = '/'+this.value;
       }
-
     </script>
 
     <script type="text/javascript">
-      // $("#contactform").validate({
-      //   rules: {
-      //     name: "required",
-      //     email: {
-      //       required: true,
-      //       email: true
-      //     },
-      //     phone: {
-      //       required: true,
-      //       step: 10
-      //     }          
-      //   },        
-      //   messages: {
-      //     firstname: "Please enter your firstname"
-      //   }
 
-      // });
       $(document).ready(function () {
-
-
         $('.phone').on('input', function (event) {
             this.value = this.value.replace(/[^0-9]/g, '');
         });
-
         $("#contactform").validate({
-
             errorClass: "my-error-class",
             validClass: "my-valid-class",
             errorPlacement: function (error, element) {
@@ -436,92 +287,22 @@
             //     },
             //     firstname: "Please enter your firstname"
             // }
+          });
         });
-
-    });
-
-    </script>
-
-    <script type="text/javascript">
-        function openNav() {
-            
-          document.getElementById("mySidenav").style.width = "100%";
-          document.getElementById("mySidenav").style.height = "210px";
-          // document.getElementById("main-body").style.background = "red";
-        }
-
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          // document.getElementById("main-body").style.background = "#fff";
-        }
-
-
-
-        $(window).resize(function() {
-            closeNav();         
-        });
-
-        // $(document).ready(function () {
-        //     $(document).on("scroll", onScroll);
-            
-        //     smoothscroll
-        //     $('a[href^="#"]').on('click', function (e) {
-        //         e.preventDefault();
-        //         $(document).off("scroll");
-                
-        //         $('a').each(function () {
-        //             $(this).removeClass('active');
-        //         })
-        //         $(this).addClass('active');
-              
-        //         var target = this.hash,
-        //             menu = target;
-        //         $target = $(target);
-        //         $('html, body').stop().animate({
-        //             'scrollTop': $target.offset().top+100
-        //         }, 900, 'swing', function () {
-        //             window.location.hash = target;
-        //             $(document).on("scroll", onScroll);
-        //         });
-        //     });
-        // });
-
-        // function onScroll(event){
-        //     var scrollPos = $(document).scrollTop();
-        //     $('#menu-center a').each(function () {
-        //         var currLink = $(this);
-        //         var refElement = $(currLink.attr("href"));
-        //         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-        //             $('#menu-center ul li a').removeClass("active");
-        //             currLink.addClass("active");
-        //         }
-        //         else{
-        //             currLink.removeClass("active");
-        //         }
-        //     });
-        // }
-
-        // $(window).bind('scroll', function () {
-        //     if ($(window).scrollTop() > 50) {
-        //         $('#header-logo').addClass('fixed');
-        //     } else {
-        //         $('#header-logo').removeClass('fixed');
-        //     }
-        // });
-
     </script>
 
 
+  <!-- angular JS -->
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="application.js"></script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-86784721-1', 'auto');
     ga('send', 'pageview');
-
   </script>
 
 </body>
