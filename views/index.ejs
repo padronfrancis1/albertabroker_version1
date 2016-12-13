@@ -94,7 +94,7 @@
         <div class="col-xs-12 col-sm-6 col-md-3" style="padding: 0px 10px;">
 
           <div class="thumbnail" style="padding: 0px 0px;">
-            <img src="assets/img/life_insurance_.jpg" class="img-responsive" style="width: 100%;">
+            <img src="assets/img/life_insurance_.jpg" class="img-responsive" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
               <div class="caption" style="background: #fff;">
                 <h4>Life Insurance</h4>
                 <a href="lifeinsurance">Learn More</a> 
@@ -168,22 +168,25 @@
 
               <form class="form" method="post" action="/" role="form" id="contactform" style="border: 0px solid red;padding: 0px 30px;width: 100%;">
 
+
                 <div class="row" style="width: 100%;padding: 0px 0px;">
 
-                    <div class="col-sm-12 col-md-4">
-
-                        <p style="color:#000;">Send Via</p>
-                        <select class="form-control input-md fontawesome-select" name="selectopt" id="selectopt">
-                          <option value="">--</option>
-                          <option value="contactus">Email</option>
-                          <option value="sms">SMS</option>
-                        </select>
+                    <div class="col-sm-12 col-md-6">
+                      <p style="color:#000;">Insurance type</p>
+                      <select class="form-control input-md fontawesome-select" id="type" name="type">
+                          <option value="Life Insurance">&#xf1ae;LIFE</option>
+                          <option value="Health Insurance">&#xf004;HEALTH</option>
+                          <option value="Travel Insurance">&#xf072;TRAVEL</option>
+                          <option value="Home Insurance">&#xf015;HOME</option>
+                          <option value="Auto Insurance">&#xf1b9;AUTO</option>
+                      </select>
                     </div>
 
-                    <div class="col-sm-12 col-md-8">
+                    <div class="col-sm-12 col-md-6">
                         <p style="color:#000;">Name:</p>
                         <input class="form-control input-md" id="fname" placeholder="First and Last Name" name="name">
                     </div>
+
                 </div>
 
                 <div class="row" style="width: 100%;">
@@ -198,27 +201,32 @@
                     </div>
                 </div>
 
-                <div class="row" style="width: 100%;">
-                    <div class="col-sm-12 col-md-4">
-                      <p style="color:#000;">Type of Insurance:</p>
-                      <select class="form-control input-md fontawesome-select" id="type" name="type">
-                          <option value="Life Insurance">&#xf1ae;LIFE</option>
-                          <option value="Health Insurance">&#xf004;HEALTH</option>
-                          <option value="Travel Insurance">&#xf072;TRAVEL</option>
-                          <option value="Home Insurance">&#xf015;HOME</option>
-                          <option value="Auto Insurance">&#xf1b9;AUTO</option>
-                      </select>
+                <div class="row" style="width: 100%;padding: 0px 0px;">
+
+                    <div class="col-sm-12 col-md-3">
+
+                        <p style="color:#000;">Send Via</p>
+                        <select class="form-control input-md fontawesome-select" name="selectopt" id="selectopt">
+                          <option value="">--</option>
+                          <option value="contactus">Email</option>
+                          <option value="sms">SMS</option>
+                        </select>
                     </div>
-                    <div class="col-sm-12 col-md-8">
+
+                </div>
+
+                <div class="row" style="width: 100%;">
+                    
+                    <div class="col-sm-12 col-md-12" style="margin-bottom: 30px;">
                       <p style="color:#000;">Message</p>
-                      <textarea style="width: 100%;" name="message" rows="4"></textarea>
+                      <textarea style="width: 100%;" name="message" rows="4" class="form-control"></textarea>
                     </div>
                 </div>
 
 
                 <div class="row" style="margin-bottom: 50px;">
                     <div class="col-sm-12 col-md-12">
-                      <button type="submit" class="btn btn-info"><i class="fa fa-envelope" aria-hidden="true" style="font-size: 2em;"></i>Send</button>
+                      <button type="submit" class="btn btn-info" style="float: right;"><i class="fa fa-envelope" aria-hidden="true" style="font-size: 2em;"></i>Send</button>
                     </div>
                 </div>
 

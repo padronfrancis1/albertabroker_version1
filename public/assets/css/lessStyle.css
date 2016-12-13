@@ -3,10 +3,13 @@ body {
   /* background: #e2e1e0;
   background: ##E9EBEE; */
   background: #83878D;
+  position: relative;
   margin: 0;
-  padding: 0;
+  min-height: 100%;
+}
+html {
   height: 100%;
-  width: 100%;
+  box-sizing: border-box;
 }
 /* hr */
 hr {
@@ -19,6 +22,12 @@ hr {
 /* space between icons and menu */
 i::after {
   content: "\00a0";
+}
+/* thumbnail shadows */
+.thumbnail {
+  -webkit-box-shadow: 0px 12px 38px -9px rgba(0, 0, 0, 0.89);
+  -moz-box-shadow: 0px 12px 38px -9px rgba(0, 0, 0, 0.89);
+  box-shadow: 0px 12px 38px -9px rgba(0, 0, 0, 0.89);
 }
 /* breadcrumbs */
 #health_insurance .breadcrumb,
@@ -406,9 +415,17 @@ footer {
   margin: 0px auto;
   background: #045F82;
   color: #fff;
-  bottom: 0px;
+  margin-bottom: 0px;
   position: relative;
   padding-top: 3%;
+}
+#footer {
+  background: #ffab62;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 /* responisve */
 @media screen and (max-width: 767px) {
