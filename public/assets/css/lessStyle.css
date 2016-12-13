@@ -156,7 +156,7 @@ i::after {
   padding: 0px 10px;
 }
 #freequote h2 {
-  padding: 3% 3%;
+  padding: 1% 3%;
   text-align: center;
   color: #000;
 }
@@ -175,14 +175,14 @@ i::after {
   padding: 0px 0px;
 }
 #freequote .form p {
-  font-size: 18px;
+  font-size: 15px;
   font-style: bold;
   color: #000;
 }
 #freequote .form .form-control {
   color: #000;
   border-radius: 0px 0px 0px 0px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 #freequote .form .my-error-class {
   border: 3px solid #FF0000;
@@ -206,7 +206,7 @@ i::after {
   width: 100%;
   margin: 0px auto;
   border: 0px solid #DADADA;
-  background: #EEEEEE;
+  background: #fff;
   padding: 0px 10px;
 }
 #quote h2 {
